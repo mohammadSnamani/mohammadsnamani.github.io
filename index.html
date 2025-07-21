@@ -20,6 +20,7 @@
     <nav class="mt-4 space-x-4">
       <a href="#about" class="hover:underline">About</a>
       <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#game-difficulty" class="hover:underline">GameDifficulty</a>
       <a href="#portfolio" class="hover:underline">Portfolio</a>
       <a href="#skills" class="hover:underline">Skills</a>
       <a href="#contact" class="hover:underline">Contact</a>
@@ -41,11 +42,42 @@
   <section id="projects" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
     <h2 class="text-2xl font-semibold text-blue-700 mb-4">Projects</h2>
     <ul class="list-disc pl-6 space-y-2">
-      <li><strong>GameDifficulty.com</strong>: Laravel web app for rating video game difficulty.</li>
       <li><strong>IranianLawyer.org</strong>: Directory & blog built with Laravel + WordPress.</li>
       <li><strong>Custom WP Themes</strong>: Responsive WordPress themes with advanced menus.</li>
       <li><strong>API Integrations</strong>: Stripe, GA4, custom REST APIs.</li>
     </ul>
+  </section>
+
+  <!-- GameDifficulty Project -->
+  <section id="game-difficulty" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">🎮 GameDifficulty</h2>
+    <p>
+      I developed <a href="https://gamedifficulty.com" target="_blank" class="text-blue-600 hover:underline">GameDifficulty.com</a>
+      entirely from scratch, using:
+      <strong>Frontend:</strong> Vue.js + Tailwind CSS<br/>
+      <strong>Backend:</strong> Laravel with RESTful API
+    </p>
+    <p class="mt-2">
+      Users can browse video game difficulty ratings, search and filter by genre or platform, and submit reviews.
+      The backend serves all game data via secured REST API endpoints.
+    </p>
+    <div class="mt-4">
+      <h3 class="font-semibold mb-2">🚀 Tech Stack & Highlights</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Frontend: Vue.js components, responsive layout with Tailwind CSS.</li>
+        <li>Backend: Laravel API, Eloquent ORM, token-based authentication.</li>
+        <li>Database: Relational schema for Games, Platforms, Reviews, Users.</li>
+        <li>Features: Search, filtering, pagination, user authentication.</li>
+        <li>Approach: Test-driven development (PHPUnit), REST design principles.</li>
+      </ul>
+    </div>
+    <!-- Screenshot -->
+    <div class="mt-6">
+      <h3 class="font-semibold mb-2">📸 Screenshot</h3>
+      <img src="images/gamedifficulty-screenshot.png" alt="GameDifficulty full-page screenshot"
+           class="w-full rounded-lg shadow" />
+      <p class="mt-1 text-sm text-gray-500">Homepage with game listings and search bar.</p>
+    </div>
   </section>
 
   <!-- Portfolio Gallery -->
@@ -53,20 +85,14 @@
     <h2 class="text-2xl font-semibold text-blue-700 mb-6">Portfolio</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <div class="rounded overflow-hidden shadow hover:scale-105 transition">
-        <a href="https://gamedifficulty.com" target="_blank">
-          <img src="images/gamedifficulty.jpg" alt="GameDifficulty" class="w-full h-48 object-cover">
-          <div class="p-3 bg-white text-center font-medium">GameDifficulty.com</div>
-        </a>
-      </div>
-      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
         <a href="https://iranianlawyer.org" target="_blank">
-          <img src="images/iranianlawyer.jpg" alt="Iranian Lawyer" class="w-full h-48 object-cover">
+          <img src="images/iranianlawyer.jpg" alt="Iranian Lawyer" class="w-full h-48 object-cover" />
           <div class="p-3 bg-white text-center font-medium">IranianLawyer.org</div>
         </a>
       </div>
       <div class="rounded overflow-hidden shadow hover:scale-105 transition">
         <a href="#">
-          <img src="images/wordpress-theme.jpg" alt="WP Theme" class="w-full h-48 object-cover">
+          <img src="images/wordpress-theme.jpg" alt="WP Theme" class="w-full h-48 object-cover" />
           <div class="p-3 bg-white text-center font-medium">WordPress Theme</div>
         </a>
       </div>
