@@ -3,135 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MohammadS Namani - Full Stack Developer & IT Manager</title>
+  <title>MohammadS Namani Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f6f8;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #0a74da;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0 0;
-      font-size: 1.1rem;
-      font-weight: 400;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background-color: white;
-      border-radius: 6px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.1);
-    }
-    h2 {
-      border-bottom: 3px solid #0a74da;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #0a74da;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-    ul li {
-      margin-bottom: 0.7rem;
-    }
-    a.external-link {
-      color: #0a74da;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a.external-link:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #e9ecef;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 3rem;
-    }
+    body { font-family: 'Roboto', sans-serif; }
   </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800">
 
-<header>
-  <h1>Mohammad SN</h1>
-  <p>Full Stack Developer | IT Manager | Laravel & Vue.js Specialist</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header class="bg-blue-700 text-white py-10 text-center">
+    <h1 class="text-4xl font-bold">Mohammad SN</h1>
+    <p class="text-lg mt-2">Full Stack Developer | IT Manager | Laravel & Vue.js Specialist</p>
+    <nav class="mt-4 space-x-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#portfolio" class="hover:underline">Portfolio</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a passionate Full Stack Developer and IT Manager with extensive experience in Laravel, Vue.js, API integrations, and project management.  
-    I have successfully delivered multiple freelance projects on <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" target="_blank" class="external-link">Upwork</a>  
-    with excellent client satisfaction. Skilled in collaborating remotely and solving complex problems efficiently.
-  </p>
-</section>
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">About Me</h2>
+    <p>
+      I am a passionate Full Stack Developer and IT Manager with extensive experience in Laravel, Vue.js, API integrations, and project management.  
+      I have successfully delivered freelance projects on 
+      <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" class="text-blue-600 hover:underline" target="_blank">Upwork</a> 
+      with excellent client satisfaction.
+    </p>
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>GameDifficulty.com</strong>: Developed a Laravel-based web application for rating video game difficulty levels.</li>
-    <li><strong>IranianLawyer.org</strong>: Built a multi-functional directory and blog site using Laravel and WordPress.</li>
-    <li><strong>Custom WordPress Themes</strong>: Designed responsive and dynamic themes integrating Elementor-style menus.</li>
-    <li><strong>API Integrations</strong>: Integrated multiple third-party APIs including Stripe payments, Google Analytics 4, and custom REST APIs.</li>
-  </ul>
-</section>
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Projects</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>GameDifficulty.com</strong>: Laravel web app for rating video game difficulty.</li>
+      <li><strong>IranianLawyer.org</strong>: Directory & blog built with Laravel + WordPress.</li>
+      <li><strong>Custom WP Themes</strong>: Responsive WordPress themes with advanced menus.</li>
+      <li><strong>API Integrations</strong>: Stripe, GA4, custom REST APIs.</li>
+    </ul>
+  </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> PHP, JavaScript, SQL, HTML5, CSS3</li>
-    <li><strong>Frameworks & Libraries:</strong> Laravel, Vue.js, Bootstrap, WordPress</li>
-    <li><strong>Tools & Platforms:</strong> Git, GitHub, phpMyAdmin, Google Analytics 4, Stripe</li>
-    <li><strong>Soft Skills:</strong> Project Management, Remote Collaboration, Problem Solving, Client Communication</li>
-  </ul>
-</section>
+  <!-- Portfolio Gallery -->
+  <section id="portfolio" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6">Portfolio</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
+        <a href="https://gamedifficulty.com" target="_blank">
+          <img src="images/gamedifficulty.jpg" alt="GameDifficulty" class="w-full h-48 object-cover">
+          <div class="p-3 bg-white text-center font-medium">GameDifficulty.com</div>
+        </a>
+      </div>
+      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
+        <a href="https://iranianlawyer.org" target="_blank">
+          <img src="images/iranianlawyer.jpg" alt="Iranian Lawyer" class="w-full h-48 object-cover">
+          <div class="p-3 bg-white text-center font-medium">IranianLawyer.org</div>
+        </a>
+      </div>
+      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
+        <a href="#">
+          <img src="images/wordpress-theme.jpg" alt="WP Theme" class="w-full h-48 object-cover">
+          <div class="p-3 bg-white text-center font-medium">WordPress Theme</div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:mohammads.namani@gmail.com" class="external-link">mohammads.namani@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/mohammadSnamani" target="_blank" class="external-link">github.com/mohammadSnamani</a></p>
-  <p>Upwork: <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" target="_blank" class="external-link">View my profile</a></p>
-  <p>Location: Tehran, Iran</p>
-</section>
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Skills</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>Languages:</strong> PHP, JavaScript, SQL, HTML5, CSS3</li>
+      <li><strong>Frameworks:</strong> Laravel, Vue.js, WordPress, Bootstrap</li>
+      <li><strong>Tools:</strong> Git, GitHub, phpMyAdmin, Google Analytics 4, Stripe</li>
+      <li><strong>Soft Skills:</strong> Project Management, Remote Collaboration, Communication</li>
+    </ul>
+  </section>
 
-<footer>
-  &copy; 2025 Mohammad SN. All rights reserved.
-</footer>
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow mb-10">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Contact</h2>
+    <p>Email: <a href="mailto:mohammads.namani@gmail.com" class="text-blue-600 hover:underline">mohammads.namani@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/mohammadSnamani" class="text-blue-600 hover:underline" target="_blank">github.com/mohammadSnamani</a></p>
+    <p>Upwork: <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" class="text-blue-600 hover:underline" target="_blank">View Profile</a></p>
+    <p>Location: Tehran, Iran</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4 text-sm text-gray-600">
+    &copy; 2025 Mohammad SN. All rights reserved.
+  </footer>
 
 </body>
 </html>
