@@ -1,91 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mohammad Snamani Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body class="bg-gray-100 text-gray-800">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammad Snamani – Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white shadow">
-      <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Mohammad Snamani</h1>
-        <nav class="mt-4 space-x-4">
-          <a href="#about" class="hover:underline">About</a>
-          <a href="#projects" class="hover:underline">Projects</a>
-          <!-- حذف لینک GameDifficulty -->
-          <a href="#portfolio" class="hover:underline">Portfolio</a>
-          <a href="#skills" class="hover:underline">Skills</a>
-          <a href="#contact" class="hover:underline">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Mohammad Snamani</h1>
+      <nav class="mt-4 space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-4">About Me</h2>
-        <p class="text-lg">
-          I'm a full-stack web developer based in Muscat, Oman with experience in Vue.js, Laravel REST API, and Tailwind CSS.
-          Passionate about creating clean, responsive, and user-friendly applications.
+  <!-- Hero Section -->
+  <section class="bg-indigo-50 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Mohammad</h2>
+      <p class="text-xl text-gray-700 mb-6">A Full-Stack Web Developer based in Muscat, Oman</p>
+      <p class="text-gray-600 max-w-2xl mx-auto">Specializing in Laravel REST APIs & modern frontend development with Vue.js and Tailwind CSS. I love building scalable web platforms and efficient UI experiences.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-6">About Me</h3>
+      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed text-center">
+        I am a passionate full-stack developer with years of experience building enterprise-level systems. I’ve led frontend and backend development on many projects, delivering complete solutions using Vue.js for the UI and Laravel for powerful REST APIs. I also have hands-on experience in system architecture and performance optimization.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="game-difficulty" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-6">Highlighted Project</h3>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h4 class="text-2xl font-bold mb-2">GameDifficulty.com</h4>
+        <p class="text-gray-700 mb-4">
+          A complete gaming difficulty ranking platform where users can vote and explore games based on difficulty, popularity, and genre.
         </p>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="py-12 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-6">Projects</h2>
-
-        <!-- GameDifficulty Project -->
-        <div id="game-difficulty" class="bg-gray-100 rounded-lg p-6 shadow">
-          <h3 class="text-xl font-semibold mb-2">GameDifficulty Platform</h3>
-          <p class="mb-4">
-            A full project developed from scratch featuring a frontend with Vue.js and Tailwind CSS,
-            and a backend powered by Laravel REST API. It helps users identify game difficulty ratings through
-            structured filters and visual UI. 
-          </p>
-
-          <!-- Screenshot with hover expand -->
-          <div class="overflow-hidden rounded-lg shadow-lg max-h-96 hover:max-h-full transition-all duration-500 ease-in-out">
-            <img src="images/gamedifficulty-screenshot.png" alt="GameDifficulty Screenshot" class="w-full object-cover" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-6">Portfolio</h2>
-        <p class="mb-4">You can view more projects on my <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" target="_blank" class="text-blue-600 underline">Upwork profile</a>.</p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="py-12 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-6">Skills</h2>
-        <ul class="list-disc ml-6 space-y-2">
-          <li>Vue.js 3 / Vue Router</li>
-          <li>Laravel 9 REST API</li>
-          <li>Tailwind CSS</li>
-          <li>PHP & MySQL</li>
-          <li>Responsive Design & Web Optimization</li>
+        <ul class="list-disc list-inside mb-4 text-gray-600">
+          <li>Frontend: Vue.js + Tailwind CSS</li>
+          <li>Backend: Laravel + REST API</li>
+          <li>Fully responsive and SEO-optimized</li>
         </ul>
+        <div class="overflow-hidden rounded-lg group relative max-h-[400px] transition-all duration-500 hover:max-h-[1000px]">
+          <img src="images/gamedifficulty-screenshot.png" alt="GameDifficulty Screenshot" class="rounded-lg transition-transform duration-300 group-hover:scale-105" />
+        </div>
+        <a href="https://gamedifficulty.com" target="_blank" class="inline-block mt-4 text-indigo-600 hover:underline">Visit Website →</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-12">
-      <div class="container mx-auto px-4">
-        <h2 class="text-2xl font-bold mb-4">Contact</h2>
-        <p>Email: <a href="mailto:mohammadsnamani@gmail.com" class="text-blue-600 underline">mohammadsnamani@gmail.com</a></p>
-        <p>Location: Muscat, Oman</p>
-      </div>
-    </section>
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-4">Let's Connect</h3>
+      <p class="mb-6 text-gray-600">Feel free to reach out if you'd like to collaborate or have a question!</p>
+      <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">My Upwork Profile</a>
+    </div>
+  </section>
 
-  </body>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 mt-12 text-center text-gray-500 text-sm">
+    © 2025 Mohammad Snamani. All rights reserved.
+  </footer>
+
+</body>
 </html>
