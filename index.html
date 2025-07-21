@@ -1,77 +1,132 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammad Snamani – Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MohammadS Namani Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Roboto', sans-serif; }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-indigo-600">Mohammad Snamani</h1>
-      <nav class="mt-4 space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
+  <header class="bg-blue-700 text-white py-10 text-center">
+    <h1 class="text-4xl font-bold">Mohammad SN</h1>
+    <p class="text-lg mt-2">Full Stack Developer | IT Manager | Laravel & Vue.js Specialist</p>
+    <nav class="mt-4 space-x-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#game-difficulty" class="hover:underline">GameDifficulty</a>
+      <a href="#portfolio" class="hover:underline">Portfolio</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-indigo-50 py-12">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-4">Hi, I'm Mohammad</h2>
-      <p class="text-xl text-gray-700 mb-6">A Full-Stack Web Developer based in Muscat, Oman</p>
-      <p class="text-gray-600 max-w-2xl mx-auto">Specializing in Laravel REST APIs & modern frontend development with Vue.js and Tailwind CSS. I love building scalable web platforms and efficient UI experiences.</p>
-    </div>
-  </section>
-
   <!-- About -->
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-semibold text-center mb-6">About Me</h3>
-      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed text-center">
-        I am a passionate full-stack developer with years of experience building enterprise-level systems. I’ve led frontend and backend development on many projects, delivering complete solutions using Vue.js for the UI and Laravel for powerful REST APIs. I also have hands-on experience in system architecture and performance optimization.
-      </p>
+  <section id="about" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">About Me</h2>
+    <p>
+      I am a passionate Full Stack Developer and IT Manager with extensive experience in Laravel, Vue.js, API integrations, and project management.  
+      I have successfully delivered freelance projects on 
+      <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" class="text-blue-600 hover:underline" target="_blank">Upwork</a> 
+      with excellent client satisfaction.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Projects</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>IranianLawyer.org</strong>: Directory & blog built with Laravel + WordPress.</li>
+      <li><strong>Custom WP Themes</strong>: Responsive WordPress themes with advanced menus.</li>
+      <li><strong>API Integrations</strong>: Stripe, GA4, custom REST APIs.</li>
+    </ul>
+  </section>
+
+  <!-- GameDifficulty Project -->
+  <section id="game-difficulty" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">🎮 GameDifficulty</h2>
+    <p>
+      I developed <a href="https://gamedifficulty.com" target="_blank" class="text-blue-600 hover:underline">GameDifficulty.com</a>
+      entirely from scratch, using:
+      <strong>Frontend:</strong> Vue.js + Tailwind CSS<br/>
+      <strong>Backend:</strong> Laravel with RESTful API
+    </p>
+    <p class="mt-2">
+      Users can browse video game difficulty ratings, search and filter by genre or platform, and submit reviews.
+      The backend serves all game data via secured REST API endpoints.
+    </p>
+    <div class="mt-4">
+      <h3 class="font-semibold mb-2">🚀 Tech Stack & Highlights</h3>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Frontend: Vue.js components, responsive layout with Tailwind CSS.</li>
+        <li>Backend: Laravel API, Eloquent ORM, token-based authentication.</li>
+        <li>Database: Relational schema for Games, Platforms, Reviews, Users.</li>
+        <li>Features: Search, filtering, pagination, user authentication.</li>
+        <li>Approach: Test-driven development (PHPUnit), REST design principles.</li>
+      </ul>
+    </div>
+    <!-- Screenshot -->
+    <div class="mt-6">
+      <h3 class="font-semibold mb-2">📸 Screenshot</h3>
+      <div class="overflow-hidden rounded-lg shadow cursor-pointer max-h-48 hover:max-h-full transition-all duration-500 ease-in-out">
+        <img
+          src="images/gamedifficulty-screenshot.png"
+          alt="GameDifficulty full-page screenshot"
+          class="w-full object-contain transition-transform duration-500 ease-in-out hover:scale-110"
+        />
+      </div>
+      <p class="mt-1 text-sm text-gray-500">Homepage with game listings and search bar.</p>
     </div>
   </section>
 
-  <!-- Project Section -->
-  <section id="game-difficulty" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-semibold text-center mb-6">Highlighted Project</h3>
-      <div class="bg-white rounded-lg shadow p-6">
-        <h4 class="text-2xl font-bold mb-2">GameDifficulty.com</h4>
-        <p class="text-gray-700 mb-4">
-          A complete gaming difficulty ranking platform where users can vote and explore games based on difficulty, popularity, and genre.
-        </p>
-        <ul class="list-disc list-inside mb-4 text-gray-600">
-          <li>Frontend: Vue.js + Tailwind CSS</li>
-          <li>Backend: Laravel + REST API</li>
-          <li>Fully responsive and SEO-optimized</li>
-        </ul>
-        <div class="overflow-hidden rounded-lg group relative max-h-[400px] transition-all duration-500 hover:max-h-[1000px]">
-          <img src="images/gamedifficulty-screenshot.png" alt="GameDifficulty Screenshot" class="rounded-lg transition-transform duration-300 group-hover:scale-105" />
-        </div>
-        <a href="https://gamedifficulty.com" target="_blank" class="inline-block mt-4 text-indigo-600 hover:underline">Visit Website →</a>
+  <!-- Portfolio Gallery -->
+  <section id="portfolio" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-6">Portfolio</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
+        <a href="https://iranianlawyer.org" target="_blank">
+          <img src="images/iranianlawyer.jpg" alt="Iranian Lawyer" class="w-full h-48 object-cover" />
+          <div class="p-3 bg-white text-center font-medium">IranianLawyer.org</div>
+        </a>
+      </div>
+      <div class="rounded overflow-hidden shadow hover:scale-105 transition">
+        <a href="#">
+          <img src="images/wordpress-theme.jpg" alt="WP Theme" class="w-full h-48 object-cover" />
+          <div class="p-3 bg-white text-center font-medium">WordPress Theme</div>
+        </a>
       </div>
     </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Skills</h2>
+    <ul class="list-disc pl-6 space-y-2">
+      <li><strong>Languages:</strong> PHP, JavaScript, SQL, HTML5, CSS3</li>
+      <li><strong>Frameworks:</strong> Laravel, Vue.js, WordPress, Bootstrap</li>
+      <li><strong>Tools:</strong> Git, GitHub, phpMyAdmin, Google Analytics 4, Stripe</li>
+      <li><strong>Soft Skills:</strong> Project Management, Remote Collaboration, Communication</li>
+    </ul>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h3 class="text-3xl font-semibold mb-4">Let's Connect</h3>
-      <p class="mb-6 text-gray-600">Feel free to reach out if you'd like to collaborate or have a question!</p>
-      <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" target="_blank" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">My Upwork Profile</a>
-    </div>
+  <section id="contact" class="max-w-4xl mx-auto bg-white p-6 mt-8 rounded-lg shadow mb-10">
+    <h2 class="text-2xl font-semibold text-blue-700 mb-4">Contact</h2>
+    <p>Email: <a href="mailto:mohammads.namani@gmail.com" class="text-blue-600 hover:underline">mohammads.namani@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/mohammadSnamani" class="text-blue-600 hover:underline" target="_blank">github.com/mohammadSnamani</a></p>
+    <p>Upwork: <a href="https://www.upwork.com/freelancers/~012158d3c9a8368d57" class="text-blue-600 hover:underline" target="_blank">View Profile</a></p>
+    <p>Location: Muscat, Oman</p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-100 py-6 mt-12 text-center text-gray-500 text-sm">
-    © 2025 Mohammad Snamani. All rights reserved.
+  <footer class="bg-gray-200 text-center py-4 text-sm text-gray-600">
+    &copy; 2025 Mohammad SN. All rights reserved.
   </footer>
 
 </body>
